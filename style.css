@@ -37,10 +37,19 @@ body {
     box-shadow: rgb(0 0 0 / 0.5) 0 0 30px;
     font-size: .9rem;
     align-items: center;
-    width: 290px;
+    width: min(100%, 300px);
 }
 
+
 /* NFT all infotmations */
+
+.container {
+    min-height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .text{
     padding: .5rem;
 }
@@ -107,8 +116,10 @@ span:hover {
 .nft-image {
     border-radius: 3%;
     justify-content: center;
-    height: 300px;
-    width: 290px;
+    /* height: 300px;*/
+    max-width: 300px;
+    width: 100%;
+    display: block;
     
 }
 
@@ -125,12 +136,12 @@ span:hover {
     border-radius: 3%;
     display: grid;
     place-items: center;
+    transition: .7s;
 }
 
 .overlay:hover{
     cursor: pointer;
     opacity: 1;
-    transition: .7s;
 }
 
 .view-icon {
