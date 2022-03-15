@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root {
+    /*Primary*/
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+    /*main BG*/
+    --Deep-dark-blue: hsl(217, 54%, 11%);
+    /*(card BG)*/
+    --Very-dark-blue: hsl(216, 50%, 16%);
+    /*(line)*/
+    --dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border-style: border-box;
+    background-color: var(--Deep-dark-blue);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.box {
+    border-radius: 3%;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-dark-blue);
+    box-shadow: rgb(0 0 0 / 0.5) 0 0 30px;
+    font-size: .9rem;
+    align-items: center;
+    width: 290px;
+}
+
+/* NFT all infotmations */
+.text{
+    padding: .5rem;
+}
+
+h1 {
+    color: var(--White);
+    cursor: pointer;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+h1:hover{
+    color: var(--cyan);
+    transition: .5s;
+}
+
+p {
+    color: var(--soft-blue);
+}
+
+.nft-information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+}
+
+.nft-description {
+    font-size: 1rem;
+}
+
+.price {
+    color: var(--cyan);
+}
+
+/* creator div */
+.creator {
+    display: flex;
+    align-items: center;
+    padding-top: .5rem;
+    border-top: 2px solid var(--dark-blue);
+    gap: 1rem;
+}
+
+span {
+    color: var(--White);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span:hover {
+    color: var(--cyan);
+    transition: .5s;
+}
+
+/* images and icons */
+.nft-price,
+.nft-time {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .8rem;
+}
+
+.nft-image {
+    border-radius: 3%;
+    justify-content: center;
+    height: 300px;
+    width: 290px;
+    
+}
+
+.card-image {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background: hsl(178 100% 50% / .5);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    display: grid;
+    place-items: center;
+}
+
+.overlay:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: .7s;
+}
+
+.view-icon {
+    position: absolute;
+    display: grid;
+    place-items: center;
+}
+
+.avatar-image {
+    height: 2.5rem;
+    border: .094rem solid var(--White);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
