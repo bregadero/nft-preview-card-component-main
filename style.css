@@ -116,9 +116,7 @@ span:hover {
 .nft-image {
     border-radius: 3%;
     justify-content: center;
-    /* height: 300px;*/
-    max-width: 300px;
-    width: 100%;
+    width: min(100%, 300px);
     display: block;
     
 }
